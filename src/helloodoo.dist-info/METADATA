@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.6
+Name: helloodoo
+Formal-Name: Hello Odoo
+App-ID: com.example.helloodoo
+Version: 0.0.1
+Home-page: https://example.com/helloodoo
+Author: Gustavo Orrillo
+Author-email: gustavo.orrillo@moldeointeractive.com.ar
+Summary: My first Odoo Beeware application

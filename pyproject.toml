@@ -1,0 +1,52 @@
+[tool.briefcase]
+project_name = "Hello Odoo"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/helloodoo"
+license = "MIT license"
+author = 'Gustavo Orrillo'
+author_email = "gustavo.orrillo@moldeointeractive.com.ar"
+
+[tool.briefcase.app.helloodoo]
+formal_name = "Hello Odoo"
+description = "My first Odoo Beeware application"
+icon = "src/helloodoo/resources/helloodoo"
+sources = ['src/helloodoo']
+requires = [
+]
+
+
+[tool.briefcase.app.helloodoo.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.helloodoo.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev32',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.helloodoo.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev32',
+]
+
+# Mobile deployments
+[tool.briefcase.app.helloodoo.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.helloodoo.android]
+requires = [
+    'toga-android>=0.3.0.dev32'
+]
